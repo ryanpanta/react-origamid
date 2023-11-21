@@ -38,6 +38,22 @@
         }
         btn.addEventListener("click", updateCount);
     </script>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function App(){
+            const [count, setCount] = React.useState(1);
+
+            return <div>
+                <p>Total: {count}</p>
+                <p>Preço: {count * 70}</p>
+                <button onClick={() => setCount(count + 1)}>Comprar</button>
+
+            </div>
+        }
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />)
+    </script>
 </body>
 
 </html>
