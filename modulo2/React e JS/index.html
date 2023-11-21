@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React e JS</title>
+    <!-- Carrega o React, React Dom e Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id="app-javascript">
+        <p>Total: <span id="total"></span></p>
+        <p>Preço: <span id="preco"></span></p>
+        <button id="button">Comprar</button>
+    </div>
+    
+    <script type="application/javascript">
+        const total = document.getElementById('total');
+        const preco = document.getElementById('preco');
+        const btn = document.getElementById('button');
+        let count = 1;
+
+        function handleClick(newCount){
+            total.innerText = newCount;
+            preco.innerText = newCount * 70;
+        }
+        handleClick(count);
+
+        function updateCount(){
+            count++;
+            handleClick(count);
+        }
+        btn.addEventListener("click", updateCount);
+    </script>
+</body>
+
+</html>
