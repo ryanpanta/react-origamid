@@ -1,0 +1,56 @@
+{
+  "editor.tabSize": 4,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "explorer.compactFolders": false,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.minimap.enabled": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, vite*, .eslint*"
+  },
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "explorer.confirmDragAndDrop": false,
+  "diffEditor.renderSideBySide": true,
+  "editor.formatOnSave": true,
+  "html.autoClosingTags": false,
+  "editor.colorDecorators": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "prettier.singleQuote": true,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "functional": "c"
+  },
+  "editor.minimap.renderCharacters": false,
+  "breadcrumbs.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "color-highlight.markerType": "dot-before",
+  "editor.renderWhitespace": "selection",
+  "workbench.statusBar.visible": true,
+  "prettier.trailingComma": "all",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.sortOrder": "default",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "window.newWindowDimensions": "inherit",
+  "html.format.wrapAttributes": "auto",
+  "html.format.wrapLineLength": 0,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.bracketPairColorization.enabled": false,
+}
+
